@@ -53,6 +53,7 @@ main img {
 /* -------  Navigation ------- */
 
 header {
+  display: flex;
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
@@ -117,3 +118,84 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media (min-width: 480px) {
+  header {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .logo {
+    font-size: 36px;
+    margin-right: 20px;
+  }
+
+  header nav {
+    flex-grow: 1;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header nav ul li {
+    margin-bottom: 0;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form label {
+    margin-right: 10px;
+  }
+
+  form select,
+  form input {
+    width: auto;
+  }
+
+  form button {
+    width: auto;
+  }
+
+  #about .group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #about .item {
+    flex-grow: 1;
+    max-width: 50%;
+  }
+
+  #about p {
+    margin-top: 20px;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  }
+
+  #ideas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  #host .group {
+    display: flex;
+  }
+
+  #host .item {
+    flex-grow: 1;
+    max-width: 33%;
+  }
